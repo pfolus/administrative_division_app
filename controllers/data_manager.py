@@ -42,7 +42,4 @@ def load_database():
                                                    item[POW],
                                                    item[GMI],
                                                    item[RGMI]))
-
-    print("liczba województw w bazie: {}".format(len(malopolska.provinces)))
-    print("liczba powiatów w bazie: {}".format(len(malopolska.counties)))
-    print("liczba gmin w bazie: {}".format(len(malopolska.communes)))
+    return malopolska

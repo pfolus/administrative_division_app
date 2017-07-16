@@ -1,9 +1,9 @@
-from controllers import data_manager
+from controllers import unit_controller
 
 
 def main():
 
-    data_manager.load_database()
+    unit_controller.start_controller()
 
 
 if __name__ == "__main__":
