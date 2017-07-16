@@ -20,67 +20,67 @@ What would you like to do:
 
 ### Province
 
-#### Attributes:
+##### Attributes:
 
--name
--location_type
--province_num
+- name
+- location_type
+- province_num
 
-#### Methods:
+##### Methods:
 
 None
 
 ### County
 
-### Parenting class:
+##### Parenting class:
 
 Province
 
-#### Attributes:
+##### Attributes:
 
--name
--location_type
--province_num
--county_num
+- name
+- location_type
+- province_num
+- county_num
 
-#### Methods:
+##### Methods:
 
 None
 
 ### Commune
 
-### Parenting class:
+##### Parenting class:
 
 County
 
-#### Attributes:
+##### Attributes:
 
--name
--location_type
--province_num
--county_num
--commune_type
--commune_num
+- name
+- location_type
+- province_num
+- county_num
+- commune_type
+- commune_num
 
-#### Methods:
+##### Methods:
 
 None
 
 ### Units
 
-### Parenting class:
+##### Parenting class:
 
 None
 
-#### Attributes:
+##### Attributes:
 
--provinces (list of provinces)
--counties (list of counties)
--communes (list of communes)
+- provinces (list of provinces)
+- counties (list of counties)
+- communes (list of communes)
 
-#### Methods:
+##### Methods:
 
-#### get_county_with_most_communes_num(self):
+###### get_county_with_most_communes_num(self):
 
     iterater through counties list, and returns name of the county
     with the largest commune_num
@@ -88,7 +88,7 @@ None
     Returns:
     - county = obj of County class
 
-#### get_commune_with_max_num(self):
+###### get_commune_with_max_num(self):
 
     iterates through communes, searching for the commune with max number.
     Returns number of county.
@@ -96,7 +96,7 @@ None
     Returns:
     - commune_with_max_num.county_num = int
 
-#### get_cities_with_longest_names(self, number=3):
+###### get_cities_with_longest_names(self, number=3):
 
     Returns a number of cities with a longest names.
 
@@ -106,7 +106,7 @@ None
     Return:
     - cities_list[:number] = list of strings
 
-#### get_statistics(self):
+###### get_statistics(self):
 
     iterates through lists of provinces , counties and communes, and extract their
     type names to location_types list. Then counts occurencies of each type, and makes
@@ -116,7 +116,7 @@ None
     Return:
     - location_types_dict = nasted list
 
-#### get_locations_dict(self):
+###### get_locations_dict(self):
 
     iterates through lists of provinces, counties and communes, and extract names of locations.
     Then returns a dictionary in which key = name of location, and value = number of occurencies
